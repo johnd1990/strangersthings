@@ -25,6 +25,7 @@ const PostItem = ({ post, token, onDelete }) => {
   return (
     <div className='post-item'>
       <h2>{post.title}</h2>
+      <p>{"Description: " + post.description}</p>
       <p>{"Location: " + post.location}</p>
       <p>{"Price: " + post.price}</p>
       <p>{"Delivery: " + (post.willDeliver ? "Yes" : "No")}</p>
