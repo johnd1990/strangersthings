@@ -1,0 +1,262 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+  color: #e6150e;
+  transform: scale(1.1);
+}
+
+.log-out-link {
+  background: none;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.log-out-link:hover {
+  color: #e6150e;
+  transform: scale(1.1);
+}
+
+/* Centering the search and create post elements */
+.navbar .search-post,
+.navbar .create-post {
+  display: flex;
+  align-items: center;
+}
+
+.search-post {
+  margin-right: 1rem;
+}
+
+.create-post-form {
+  width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-post-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.create-post-form label {
+  font-size: 1rem;
+  display: block;
+  margin: 10px 0;
+}
+
+.create-post-form input[type='text'],
+.create-post-form input[type='checkbox'] {
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-post-form label[for='willDeliver'] {
+  display: flex;
+  align-items: center;
+}
+
+.create-post-form .submit-btn {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  background-color: #e6150e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-post-form .submit-btn:hover {
+  background-color: #c40a04;
+}
+
+/* Home Styling */
+.home-container {
+  text-align: center;
+}
+
+.banner-image {
+  max-width: 50%;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.welcome-message {
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Posts Styling */
+.post-page {
+  padding: 50px;
+}
+
+.posts {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.post-item {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.post-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Login/Register Styling */
+#account-form {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 25px 10px;
+}
+
+#account-form h1 {
+  text-align: center;
+}
+
+.post-header {
+  text-align: center;
+}
+
+#account-form label {
+  font-size: 1rem;
+  display: block;
+  margin: 10px auto;
+}
+
+#account-form input {
+  font-size: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+#account-form button {
+  font-size: 1rem;
+  display: block;
+  padding: 3px 8px;
+  margin: 25px auto 0;
+}
+
+/* Profile Styling */
+#profile-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.profile-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.recieved-messages h3 {
+  margin-top: 1rem;
+}
+
+.recieved-message {
+  margin-bottom: 1rem;
+  padding: 2px;
+}
+
+.sent-messages h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  margin-bottom: 1rem;
+}
+
+.recieved-messages,
+.sent-messages {
+  text-align: left;
+}
+
+.view-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.view-post {
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.view-post:hover {
+  transform: translateY(-5px);
+}
+
+/* Forms Styling */
+#post-form {
+  width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-actions {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
